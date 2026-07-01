@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="METRIX - Marca de streetwear premium nacida en Medellín. Diseños industriales y urbanos inspirados en el caos nocturno y la crudeza del concreto. Compra chaquetas, hoodies y cargo pants.">
+    <title>METRIX // Streetwear Medellín</title>
+    
+    <!-- Google Fonts: Orbitron (Títulos) y Montserrat (Cuerpo) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Estilos Principales -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-dot"></div>
+
+
+
+    <!-- Header / Navbar -->
+    <header class="main-header" id="header">
+        <div class="header-container">
+            <a href="#" class="logo-container" id="logo-link">
+                <img src="assets/logo.png" alt="METRIX Logo" class="brand-logo">
+            </a>
+            
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#hero" class="nav-link">Inicio</a></li>
+                    <li><a href="#colecciones" class="nav-link">Colecciones</a></li>
+                    <li><a href="#catalogo" class="nav-link">Catálogo</a></li>
+                    <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="cart-toggle-btn" id="cart-toggle" aria-label="Abrir Carrito">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-count" id="cart-count">0</span>
+                </button>
+                <button class="mobile-menu-btn" id="mobile-toggle" aria-label="Menu Móvil">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-overlay" id="mobile-menu">
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="#hero" class="mobile-link">Inicio</a></li>
+                <li><a href="#colecciones" class="mobile-link">Colecciones</a></li>
+                <li><a href="#catalogo" class="mobile-link">Catálogo</a></li>
+                <li><a href="#nosotros" class="mobile-link">Nosotros</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+
+        <div class="hero-content">
+            <h1 class="hero-title" id="main-title">
+                <span class="text-glow">METRIX</span>
+                <span class="text-subtitle">RAW STREETWEAR</span>
+            </h1>
+            <p class="hero-slogan">FORJADO EN LAS CALLES DE MEDELLÍN // CAOS & CONCRETO</p>
+            <div class="hero-buttons">
+                <a href="#colecciones" class="btn btn-primary btn-neon">
+                    <span>VER COLECCIONES</span>
+                </a>
+                <a href="#catalogo" class="btn btn-secondary">
+                    <span>EXPLORAR TIENDA</span>
+                </a>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>SCROLL</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Ticker Section -->
+    <div class="ticker-wrap">
+        <div class="ticker">
+            <div class="ticker-item">BARRIO NORTE // COL_01</div>
+            <div class="ticker-item">CANCHA LIBRE // COL_02</div>
+            <div class="ticker-item">EDICIÓN LIMITADA</div>
+            <div class="ticker-item">METRIX STREETWEAR</div>
+            <div class="ticker-item">MEDELLÍN COLOMBIA</div>
+            <div class="ticker-item">HECHO EN EL BARRIO</div>
+            <div class="ticker-item">BARRIO NORTE // COL_01</div>
+            <div class="ticker-item">CANCHA LIBRE // COL_02</div>
+            <div class="ticker-item">EDICIÓN LIMITADA</div>
+            <div class="ticker-item">METRIX STREETWEAR</div>
+            <div class="ticker-item">MEDELLÍN COLOMBIA</div>
+            <div class="ticker-item">HECHO EN EL BARRIO</div>
+        </div>
+    </div>
+
+    <!-- Colecciones Section -->
+    <section class="collections-section" id="colecciones">
+        <div class="section-header container">
+            <h2 class="section-title text-slide-up">COLECCIONES <span>// CAPSULES</span></h2>
+            <p class="section-subtitle">Dos capítulos del mismo barrio. Dos formas de vivir la calle.</p>
+        </div>
+        
+        <div class="collections-grid">
+            <!-- Colección 1: Barrio Norte -->
+            <div class="collection-card col-neon" data-collection="barrio_norte" id="col-card-neon">
+                <div class="collection-img-container">
+                    <img src="assets/1ra/1adc2a17-aeae-4bdf-8278-4a081b20331d.jpg" alt="Colección Barrio Norte" class="collection-img">
+                    <div class="collection-overlay"></div>
+                </div>
+                <div class="collection-info">
+                    <span class="collection-tag tag-neon">COL_01</span>
+                    <h3 class="collection-name">BARRIO NORTE</h3>
+                    <p class="collection-desc">Para los que crecieron donde el concreto era el patio y el grafiti era el idioma. Hoodies sobredimensionados, cargos tácticos, tracksuits de nylon y tees desgastadas con mensajes que no necesitan traducción. La periferia no es el margen — es el origen.</p>
+                    <a href="#catalogo" class="btn-text btn-text-neon filter-collection-btn" data-target="BARRIO_NORTE">
+                        VER LOOKS <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Colección 2: Cancha Libre -->
+            <div class="collection-card col-raw" data-collection="cancha_libre" id="col-card-raw">
+                <div class="collection-img-container">
+                    <img src="assets/2da/62da7cfa-2d1e-4a14-a02f-b1dee49b3e6c.jpg" alt="Colección Cancha Libre" class="collection-img">
+                    <div class="collection-overlay"></div>
+                </div>
+                <div class="collection-info">
+                    <span class="collection-tag tag-raw">COL_02</span>
+                    <h3 class="collection-name">CANCHA LIBRE</h3>
+                    <p class="collection-desc">El deporte siempre fue del barrio antes de ser de los estadios. Jerseys de fútbol, hockey y béisbol reconvertidos al lenguaje de la calle: colores que no piden permiso, números que son identidad, cortes que se usan en el parche o en la rumba. La cancha no termina con el partido.</p>
+                    <a href="#catalogo" class="btn-text btn-text-raw filter-collection-btn" data-target="CANCHA_LIBRE">
+                        VER LOOKS <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nosotros / Story Section -->
+    <section class="story-section" id="nosotros">
+        <div class="container story-container">
+            <div class="story-image">
+                <img src="assets/raw_2.png" alt="METRIX Factory Medellín" class="story-img">
+                <div class="story-badge">
+                    <span>M D E</span>
+                    <span>2 0 2 6</span>
+                </div>
+            </div>
+            <div class="story-content">
+                <span class="accent-text">// NUESTRA HISTORIA</span>
+                <h2 class="story-title">EL PRECIO DEL CONCRETO Y EL RUIDO DEL BARRIO</h2>
+                <p>Nacidos en Medellín, una ciudad donde las montañas abrazan el metal y la industria textil tiene raíces de acero. METRIX no es solo ropa; es un manifiesto de resistencia urbana y autoexpresión.</p>
+                <p>Cada pieza es diseñada y confeccionada localmente con los más altos estándares de algodón pesado y costuras reforzadas, inspirados en los contrastes de nuestra ciudad: desde la calma fría del concreto hasta la energía eléctrica del barrio de noche.</p>
+                
+                <div class="story-stats">
+                    <div class="stat-item">
+                        <span class="stat-num">100%</span>
+                        <span class="stat-lbl">Hecho en Medellín</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">400G</span>
+                        <span class="stat-lbl">Algodón Premium</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">1/1</span>
+                        <span class="stat-lbl">Edición Limitada</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catálogo Section -->
+    <section class="catalog-section" id="catalogo">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">EL CATÁLOGO <span>// DROPS</span></h2>
+                <p class="section-subtitle">Selecciona tu uniforme urbano. Filtra por categoría o colección.</p>
+            </div>
+
+            <!-- Filtros de Productos -->
+            <div class="catalog-filters">
+                <div class="filter-group">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="camisetas">Camisetas</button>
+                    <button class="filter-btn" data-filter="hoodies">Hoodies</button>
+                    <button class="filter-btn" data-filter="pantalones">Cargos</button>
+                    <button class="filter-btn" data-filter="accesorios">Accesorios</button>
+                </div>
+                <div class="filter-group-collection">
+                    <button class="filter-col-btn active" data-col-filter="all">Todas las Colecciones</button>
+                    <button class="filter-col-btn neon-color-btn" data-col-filter="BARRIO_NORTE">BARRIO_NORTE</button>
+                    <button class="filter-col-btn raw-color-btn" data-col-filter="CANCHA_LIBRE">CANCHA_LIBRE</button>
+                </div>
+            </div>
+
+            <!-- Grid de Productos -->
+            <div class="products-grid" id="products-grid">
+                <!-- Se inyecta dinámicamente mediante JavaScript para facilitar el manejo del carrito y filtros -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Sidebar Drawer -->
+    <div class="cart-drawer" id="cart-drawer">
+        <div class="cart-drawer-header">
+            <h3>CARRITO DE COMPRAS</h3>
+            <button class="cart-close-btn" id="cart-close" aria-label="Cerrar Carrito">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        
+        <div class="cart-drawer-content" id="cart-items-container">
+            <!-- Items del carrito -->
+            <div class="cart-empty-message" id="cart-empty-message">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <p>Tu carrito está vacío</p>
+                <a href="#catalogo" class="btn btn-primary" id="go-shopping-btn">EXPLORAR TIENDA</a>
+            </div>
+        </div>
+
+        <div class="cart-drawer-footer" id="cart-footer">
+            <div class="cart-summary-row">
+                <span>Subtotal:</span>
+                <span class="cart-subtotal" id="cart-subtotal">$0 COP</span>
+            </div>
+            <div class="cart-summary-row shipping-row">
+                <span>Envío (Medellín/Nacional):</span>
+                <span class="free-shipping">¡GRATIS!</span>
+            </div>
+            <button class="checkout-btn" id="checkout-btn">PROCEDER AL PAGO</button>
+        </div>
+    </div>
+    
+    <!-- Cart Overlay Backdrop -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+
+    <!-- Product Detail Modal -->
+    <div class="modal-overlay" id="product-modal">
+        <div class="modal-container">
+            <button class="modal-close-btn" id="modal-close" aria-label="Cerrar Ventana">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="modal-content-grid" id="modal-content-inner">
+                <!-- Inyectado por JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Checkout Simulation Modal -->
+    <div class="modal-overlay" id="checkout-modal">
+        <div class="modal-container checkout-container">
+            <button class="modal-close-btn" id="checkout-close" aria-label="Cerrar Ventana">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="checkout-modal-content">
+                <div class="checkout-header">
+                    <img src="assets/logo.png" alt="METRIX" class="checkout-logo">
+                    <h3>PAGO SIMULADO SECURE_GATE</h3>
+                </div>
+                
+                <form id="checkout-form" class="checkout-form">
+                    <div class="form-section-title">1. DATOS DE ENVÍO</div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="c-name">Nombre Completo</label>
+                            <input type="text" id="c-name" placeholder="Ej. Juan Pérez" required>
+                        </div>
+                    </div>
+                    <div class="form-row split">
+                        <div class="form-group">
+                            <label for="c-email">Email</label>
+                            <input type="email" id="c-email" placeholder="ejemplo@correo.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="c-phone">Celular</label>
+                            <input type="text" id="c-phone" placeholder="300 123 4567" required>
+                        </div>
+                    </div>
+                    <div class="form-row split">
+                        <div class="form-group">
+                            <label for="c-city">Ciudad</label>
+                            <input type="text" id="c-city" value="Medellín" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="c-address">Dirección de entrega</label>
+                            <input type="text" id="c-address" placeholder="Calle 10 # 43 - 5" required>
+                        </div>
+                    </div>
+
+                    <div class="form-section-title">2. DETALLES DE PAGO</div>
+                    <div class="payment-methods">
+                        <div class="payment-method active" data-method="card">
+                            <i class="fa-solid fa-credit-card"></i> Tarjeta
+                        </div>
+                        <div class="payment-method" data-method="pse">
+                            <i class="fa-solid fa-building-columns"></i> PSE
+                        </div>
+                        <div class="payment-method" data-method="cash">
+                            <i class="fa-solid fa-money-bill-wave"></i> Contraentrega
+                        </div>
+                    </div>
+
+                    <div class="card-details" id="card-details-fields">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="c-card-num">Número de Tarjeta</label>
+                                <input type="text" id="c-card-num" placeholder="4000 1234 5678 9010">
+                            </div>
+                        </div>
+                        <div class="form-row split">
+                            <div class="form-group">
+                                <label for="c-card-expiry">Vencimiento</label>
+                                <input type="text" id="c-card-expiry" placeholder="MM/AA">
+                            </div>
+                            <div class="form-group">
+                                <label for="c-card-cvv">CVV</label>
+                                <input type="password" id="c-card-cvv" placeholder="123">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="checkout-total-banner">
+                        <span>TOTAL A PAGAR:</span>
+                        <span class="checkout-total-price" id="checkout-total-price">$0 COP</span>
+                    </div>
+
+                    <button type="submit" class="submit-payment-btn" id="submit-payment-btn">
+                        CONFIRMAR COMPRA <i class="fa-solid fa-lock"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col brand-info">
+                <img src="assets/logo.png" alt="METRIX" class="footer-logo">
+                <p class="footer-tagline">Streetwear concebido bajo el ruido y el metal de Medellín, Colombia. Calidad indestructible y diseños limitados.</p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col links-col">
+                <h4>SECCIONES</h4>
+                <ul>
+                    <li><a href="#hero">Inicio</a></li>
+                    <li><a href="#colecciones">Colecciones</a></li>
+                    <li><a href="#catalogo">Catálogo</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col links-col">
+                <h4>AYUDA</h4>
+                <ul>
+                    <li><a href="#">Envíos & Cambios</a></li>
+                    <li><a href="#">Guía de Tallas</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col newsletter-col">
+                <h4>ÚNETE AL SINDICATO</h4>
+                <p>Regístrate para recibir notificaciones exclusivas de nuevos drops y lanzamientos secretos.</p>
+                <form class="newsletter-form" id="newsletter-form">
+                    <input type="email" placeholder="TU EMAIL" required>
+                    <button type="submit" class="btn-newsletter"><i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom container">
+            <p>&copy; 2026 METRIX CLOTHING. Diseñado y Hecho en Medellín, Colombia. Todos los derechos reservados.</p>
+            <div class="metrix-badge-local">
+                <span>MEDELLÍN CONCRETO Y ASfalto</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="index.js"></script>
+</body>
+</html>
