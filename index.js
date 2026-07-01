@@ -262,7 +262,14 @@ function renderProducts() {
         `;
         
         // Agregar listeners
-        card.querySelector(".view-detail-btn").addEventListener("click", () => openProductModal(product));
+        card.querySelector(".product-card-img-wrap").addEventListener("click", (e) => {
+            if (e.target.closest(".add-to-cart-btn-grid")) return;
+            openProductModal(product);
+        });
+        card.querySelector(".view-detail-btn").addEventListener("click", (e) => {
+            e.stopPropagation();
+            openProductModal(product);
+        });
         card.querySelector(".add-to-cart-btn-grid").addEventListener("click", (e) => {
             e.stopPropagation();
             addToCart(product.id);
