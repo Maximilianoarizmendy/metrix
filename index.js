@@ -45,7 +45,7 @@ const PRODUCTS = [
         id: "prod-04",
         title: "Camisa Desgastada + Cargo Tactical",
         price: 280000,
-        category: "accesorios",
+        category: "camisetas",
         collection: "BARRIO_NORTE",
         image: "assets/1ra/5c7df988-21c0-4702-be34-60526e574327.jpg",
         story: "LOOK // 04",
